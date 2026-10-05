@@ -1,0 +1,20 @@
+{"q": "A customer says they can't log in even after resetting their password.", "expected_source": "rb-access-v1"}
+{"q": "How should we handle an account that's been locked out?", "expected_source": "rb-access-v1"}
+{"q": "User is stuck at the MFA screen and can't get past it.", "expected_source": "rb-access-v1"}
+{"q": "Someone forgot their password and wants it reset immediately.", "expected_source": "rb-access-v1"}
+{"q": "The login page keeps rejecting correct credentials.", "expected_source": "rb-access-v1"}
+{"q": "What's the procedure when a user account is suspended?", "expected_source": "rb-access-v1"}
+{"q": "Customer claims they were billed twice this month.", "expected_source": "rb-billing-v1"}
+{"q": "Invoice amount doesn't match what the customer expected to pay.", "expected_source": "rb-billing-v1"}
+{"q": "There's a duplicate charge on the account — how do we fix it?", "expected_source": "rb-billing-v1"}
+{"q": "Tax on the invoice looks incorrect for the customer's region.", "expected_source": "rb-billing-v1"}
+{"q": "User says a discount that should have applied wasn't reflected.", "expected_source": "rb-billing-v1"}
+{"q": "How do we verify line items against the original order?", "expected_source": "rb-billing-v1"}
+{"q": "API calls from one customer keep timing out.", "expected_source": "rb-reliability-v1"}
+{"q": "Is there a known outage affecting the EU region?", "expected_source": "rb-reliability-v1"}
+{"q": "Client's requests are slow — could this be our service?", "expected_source": "rb-reliability-v1"}
+{"q": "How do we check the service status dashboard?", "expected_source": "rb-reliability-v1"}
+{"q": "Customer wants an ETA for when the API will be back up.", "expected_source": "rb-reliability-v1"}
+{"q": "What's our policy for compensating customers during an outage?", "expected_source": null}
+{"q": "Can you recommend a good restaurant near the office?", "expected_source": null}
+{"q": "How do I change the theme color of the dashboard?", "expected_source": null}

@@ -30,7 +30,7 @@ def chat(prompt: str, system: str | None = None, num_predict: int = 256) -> dict
         "messages": messages,
         "stream": False,
         "options": {
-            "temperature": 0.9,
+            "temperature": 0.2,
             "num_ctx": 4096,
             "num_predict": num_predict,
         },

@@ -5,11 +5,11 @@
     "got_sources": [
       "rb-access-v1"
     ],
-    "answer_excerpt": "[rb-access-v1] Excerpt 2 [rb-access-v1]\n## Account locked\n1. Ask the user to wait 15 minutes before retrying; lockouts c",
+    "answer_excerpt": "[rb-access-v1] Excerpt 1 [rb-access-v1] states: \"4. If locked, unlock after identity verification; do not reset the pass",
     "abstained": false,
     "correct": true,
     "failure_type": null,
-    "seconds": 4.994
+    "seconds": 3.487
   },
   {
     "question": "How should we handle an account that's been locked out?",
@@ -21,7 +21,7 @@
     "abstained": false,
     "correct": true,
     "failure_type": null,
-    "seconds": 0.809
+    "seconds": 0.782
   },
   {
     "question": "User is stuck at the MFA screen and can't get past it.",
@@ -29,11 +29,11 @@
     "got_sources": [
       "rb-access-v1"
     ],
-    "answer_excerpt": "[rb-access-v1] Excerpt 1 [rb-access-v1] does not directly answer the question. However, Excerpt 1 [rb-access-v1] mention",
+    "answer_excerpt": "[rb-access-v1] Excerpt 1 [rb-access-v1]\n## MFA issues\n1. Confirm the user has the correct MFA device enrolled. This exce",
     "abstained": false,
     "correct": true,
     "failure_type": null,
-    "seconds": 1.917
+    "seconds": 1.459
   },
   {
     "question": "Someone forgot their password and wants it reset immediately.",
@@ -45,7 +45,7 @@
     "abstained": false,
     "correct": true,
     "failure_type": null,
-    "seconds": 0.586
+    "seconds": 0.581
   },
   {
     "question": "The login page keeps rejecting correct credentials.",
@@ -65,7 +65,7 @@
     "abstained": true,
     "correct": false,
     "failure_type": "over_abstained",
-    "seconds": 0.227
+    "seconds": 0.222
   },
   {
     "question": "Customer claims they were billed twice this month.",
@@ -75,7 +75,7 @@
     "abstained": true,
     "correct": false,
     "failure_type": "over_abstained",
-    "seconds": 0.001
+    "seconds": 0.002
   },
   {
     "question": "Invoice amount doesn't match what the customer expected to pay.",
@@ -87,7 +87,7 @@
     "abstained": false,
     "correct": true,
     "failure_type": null,
-    "seconds": 0.323
+    "seconds": 0.781
   },
   {
     "question": "There's a duplicate charge on the account \u2014 how do we fix it?",
@@ -102,12 +102,14 @@
   {
     "question": "Tax on the invoice looks incorrect for the customer's region.",
     "expected": "rb-billing-v1",
-    "got_sources": [],
-    "answer_excerpt": "ABSTAIN",
-    "abstained": true,
-    "correct": false,
-    "failure_type": "over_abstained",
-    "seconds": 0.284
+    "got_sources": [
+      "rb-billing-v1"
+    ],
+    "answer_excerpt": "[rb-billing-v1] According to Excerpt 1, to verify the customer's billing region and tax profile, follow steps 1 and 2 in",
+    "abstained": false,
+    "correct": true,
+    "failure_type": null,
+    "seconds": 1.249
   },
   {
     "question": "User says a discount that should have applied wasn't reflected.",
@@ -115,11 +117,11 @@
     "got_sources": [
       "rb-billing-v1"
     ],
-    "answer_excerpt": "Excerpt 1 [rb-billing-v1] states: \"3. Verify tax and discount rules were applied for the customer's region.\" This excerp",
+    "answer_excerpt": "[rb-billing-v1]",
     "abstained": false,
     "correct": true,
     "failure_type": null,
-    "seconds": 1.126
+    "seconds": 0.313
   },
   {
     "question": "How do we verify line items against the original order?",
@@ -127,11 +129,11 @@
     "got_sources": [
       "rb-billing-v1"
     ],
-    "answer_excerpt": "Excerpt 1 [rb-billing-v1] states: \"1. Compare the invoice line items to the original order record.\"",
+    "answer_excerpt": "Excerpt 1 [rb-billing-v1] states: \"Compare the invoice line items to the original order record.\"",
     "abstained": false,
     "correct": true,
     "failure_type": null,
-    "seconds": 1.184
+    "seconds": 1.149
   },
   {
     "question": "API calls from one customer keep timing out.",
@@ -143,7 +145,7 @@
     "abstained": false,
     "correct": true,
     "failure_type": null,
-    "seconds": 1.341
+    "seconds": 1.736
   },
   {
     "question": "Is there a known outage affecting the EU region?",
@@ -155,7 +157,7 @@
     "abstained": false,
     "correct": true,
     "failure_type": null,
-    "seconds": 0.432
+    "seconds": 0.428
   },
   {
     "question": "Client's requests are slow \u2014 could this be our service?",
@@ -164,11 +166,11 @@
       "rb-billing-v1",
       "rb-reliability-v1"
     ],
-    "answer_excerpt": "Excerpt 1 [rb-reliability-v1] # Slow requests\n1. Ask the customer for a request ID and approximate timestamp.\n2. Check s",
+    "answer_excerpt": "Excerpt 1 [rb-reliability-v1] section \"Slow requests\" states: \"2. Check server-side latency metrics for the affected end",
     "abstained": false,
     "correct": true,
     "failure_type": null,
-    "seconds": 3.211
+    "seconds": 2.384
   },
   {
     "question": "How do we check the service status dashboard?",
@@ -176,11 +178,11 @@
     "got_sources": [
       "rb-reliability-v1"
     ],
-    "answer_excerpt": "Excerpt 1 [rb-reliability-v1] states: \"1. Check the service status dashboard for the affected region.\"",
+    "answer_excerpt": "Excerpt 1 [rb-reliability-v1] states: \"1. Check the service status dashboard for the affected region.\" Answer: [rb-relia",
     "abstained": false,
     "correct": true,
     "failure_type": null,
-    "seconds": 1.207
+    "seconds": 1.426
   },
   {
     "question": "Customer wants an ETA for when the API will be back up.",
@@ -188,11 +190,11 @@
     "got_sources": [
       "rb-reliability-v1"
     ],
-    "answer_excerpt": "Excerpt 1 [rb-reliability-v1] does not directly answer the question. ABSTAIN",
+    "answer_excerpt": "Excerpt 1 [rb-reliability-v1] states: \"4. Do not promise a specific fix time without an incident confirmation.\"",
     "abstained": false,
     "correct": true,
     "failure_type": null,
-    "seconds": 0.686
+    "seconds": 0.81
   },
   {
     "question": "What's our policy for compensating customers during an outage?",
@@ -202,7 +204,7 @@
     "abstained": true,
     "correct": true,
     "failure_type": null,
-    "seconds": 0.001
+    "seconds": 0.002
   },
   {
     "question": "Can you recommend a good restaurant near the office?",

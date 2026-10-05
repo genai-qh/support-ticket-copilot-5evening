@@ -1,0 +1,220 @@
+[
+  {
+    "question": "A customer says they can't log in even after resetting their password.",
+    "expected": "rb-access-v1",
+    "got_sources": [
+      "rb-access-v1"
+    ],
+    "answer_excerpt": "Excerpt 2 [rb-access-v1]\n## Account locked\n1. Ask the user to wait 15 minutes before retrying; lockouts clear automatica",
+    "abstained": false,
+    "correct": true,
+    "failure_type": null,
+    "seconds": 6.061
+  },
+  {
+    "question": "How should we handle an account that's been locked out?",
+    "expected": "rb-access-v1",
+    "got_sources": [
+      "rb-access-v1"
+    ],
+    "answer_excerpt": "According to Excerpt 1, to handle an account that's been locked out, follow steps 1 and 2: 1. Ask the user to wait 15 mi",
+    "abstained": false,
+    "correct": true,
+    "failure_type": null,
+    "seconds": 2.003
+  },
+  {
+    "question": "User is stuck at the MFA screen and can't get past it.",
+    "expected": "rb-access-v1",
+    "got_sources": [
+      "rb-access-v1"
+    ],
+    "answer_excerpt": "Excerpt 1 [rb-access-v1] does not directly address the user's issue, but Excerpt 3 [rb-access-v1] mentions that users sh",
+    "abstained": false,
+    "correct": true,
+    "failure_type": null,
+    "seconds": 1.665
+  },
+  {
+    "question": "Someone forgot their password and wants it reset immediately.",
+    "expected": "rb-access-v1",
+    "got_sources": [
+      "rb-access-v1"
+    ],
+    "answer_excerpt": "[rb-access-v1] The correct action to take when someone forgets their password and wants it reset immediately is: 1. Dire",
+    "abstained": false,
+    "correct": true,
+    "failure_type": null,
+    "seconds": 1.154
+  },
+  {
+    "question": "The login page keeps rejecting correct credentials.",
+    "expected": "rb-access-v1",
+    "got_sources": [],
+    "answer_excerpt": "ABSTAIN",
+    "abstained": true,
+    "correct": false,
+    "failure_type": "over_abstained",
+    "seconds": 0.001
+  },
+  {
+    "question": "What's the procedure when a user account is suspended?",
+    "expected": "rb-access-v1",
+    "got_sources": [],
+    "answer_excerpt": "ABSTAIN",
+    "abstained": true,
+    "correct": false,
+    "failure_type": "over_abstained",
+    "seconds": 0.221
+  },
+  {
+    "question": "Customer claims they were billed twice this month.",
+    "expected": "rb-billing-v1",
+    "got_sources": [],
+    "answer_excerpt": "ABSTAIN",
+    "abstained": true,
+    "correct": false,
+    "failure_type": "over_abstained",
+    "seconds": 0.001
+  },
+  {
+    "question": "Invoice amount doesn't match what the customer expected to pay.",
+    "expected": "rb-billing-v1",
+    "got_sources": [],
+    "answer_excerpt": "ABSTAIN",
+    "abstained": true,
+    "correct": false,
+    "failure_type": "over_abstained",
+    "seconds": 0.291
+  },
+  {
+    "question": "There's a duplicate charge on the account \u2014 how do we fix it?",
+    "expected": "rb-billing-v1",
+    "got_sources": [],
+    "answer_excerpt": "ABSTAIN",
+    "abstained": true,
+    "correct": false,
+    "failure_type": "over_abstained",
+    "seconds": 0.604
+  },
+  {
+    "question": "Tax on the invoice looks incorrect for the customer's region.",
+    "expected": "rb-billing-v1",
+    "got_sources": [],
+    "answer_excerpt": "ABSTAIN",
+    "abstained": true,
+    "correct": false,
+    "failure_type": "over_abstained",
+    "seconds": 0.674
+  },
+  {
+    "question": "User says a discount that should have applied wasn't reflected.",
+    "expected": "rb-billing-v1",
+    "got_sources": [
+      "rb-billing-v1"
+    ],
+    "answer_excerpt": "3. [rb-billing-v1]",
+    "abstained": false,
+    "correct": true,
+    "failure_type": null,
+    "seconds": 0.36
+  },
+  {
+    "question": "How do we verify line items against the original order?",
+    "expected": "rb-billing-v1",
+    "got_sources": [],
+    "answer_excerpt": "ABSTAIN",
+    "abstained": true,
+    "correct": false,
+    "failure_type": "over_abstained",
+    "seconds": 0.929
+  },
+  {
+    "question": "API calls from one customer keep timing out.",
+    "expected": "rb-reliability-v1",
+    "got_sources": [],
+    "answer_excerpt": "ABSTAIN",
+    "abstained": true,
+    "correct": false,
+    "failure_type": "over_abstained",
+    "seconds": 1.331
+  },
+  {
+    "question": "Is there a known outage affecting the EU region?",
+    "expected": "rb-reliability-v1",
+    "got_sources": [
+      "rb-reliability-v1"
+    ],
+    "answer_excerpt": "[rb-reliability-v1]",
+    "abstained": false,
+    "correct": true,
+    "failure_type": null,
+    "seconds": 0.34
+  },
+  {
+    "question": "Client's requests are slow \u2014 could this be our service?",
+    "expected": "rb-reliability-v1",
+    "got_sources": [
+      "rb-reliability-v1"
+    ],
+    "answer_excerpt": "Excerpt 1 [rb-reliability-v1] # Slow requests\n1. Ask the customer for a request ID and approximate timestamp.\n2. Check s",
+    "abstained": false,
+    "correct": true,
+    "failure_type": null,
+    "seconds": 1.952
+  },
+  {
+    "question": "How do we check the service status dashboard?",
+    "expected": "rb-reliability-v1",
+    "got_sources": [
+      "rb-reliability-v1"
+    ],
+    "answer_excerpt": "Excerpt 1 [rb-reliability-v1] states:\n1. Check the service status dashboard for the affected region. Answer: Check the s",
+    "abstained": false,
+    "correct": true,
+    "failure_type": null,
+    "seconds": 1.614
+  },
+  {
+    "question": "Customer wants an ETA for when the API will be back up.",
+    "expected": "rb-reliability-v1",
+    "got_sources": [
+      "rb-reliability-v1"
+    ],
+    "answer_excerpt": "Source [rb-reliability-v1], excerpt #4: Do not promise a specific fix time without an incident confirmation.",
+    "abstained": false,
+    "correct": true,
+    "failure_type": null,
+    "seconds": 0.724
+  },
+  {
+    "question": "What's our policy for compensating customers during an outage?",
+    "expected": null,
+    "got_sources": [],
+    "answer_excerpt": "ABSTAIN",
+    "abstained": true,
+    "correct": true,
+    "failure_type": null,
+    "seconds": 0.001
+  },
+  {
+    "question": "Can you recommend a good restaurant near the office?",
+    "expected": null,
+    "got_sources": [],
+    "answer_excerpt": "ABSTAIN",
+    "abstained": true,
+    "correct": true,
+    "failure_type": null,
+    "seconds": 0.001
+  },
+  {
+    "question": "How do I change the theme color of the dashboard?",
+    "expected": null,
+    "got_sources": [],
+    "answer_excerpt": "ABSTAIN",
+    "abstained": true,
+    "correct": true,
+    "failure_type": null,
+    "seconds": 0.001
+  }
+]

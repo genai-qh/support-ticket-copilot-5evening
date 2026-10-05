@@ -1,0 +1,230 @@
+[
+  {
+    "question": "A customer says they can't log in even after resetting their password.",
+    "expected": "rb-access-v1",
+    "got_sources": [
+      "rb-access-v1"
+    ],
+    "answer_excerpt": "[rb-access-v1] Excerpt 1 [rb-access-v1] states: \"1. Confirm the user exists in the identity provider.\"",
+    "abstained": false,
+    "correct": true,
+    "failure_type": null,
+    "seconds": 0.882
+  },
+  {
+    "question": "How should we handle an account that's been locked out?",
+    "expected": "rb-access-v1",
+    "got_sources": [
+      "rb-access-v1"
+    ],
+    "answer_excerpt": "According to Excerpt 1 [rb-access-v1], to handle an account that's been locked out, follow steps 1 and 2: 1. Ask the use",
+    "abstained": false,
+    "correct": true,
+    "failure_type": null,
+    "seconds": 1.783
+  },
+  {
+    "question": "User is stuck at the MFA screen and can't get past it.",
+    "expected": "rb-access-v1",
+    "got_sources": [
+      "rb-access-v1"
+    ],
+    "answer_excerpt": "[rb-access-v1] Excerpt 1 [rb-access-v1] does not directly answer the question. Excerpt 2 [rb-access-v1] does not directl",
+    "abstained": false,
+    "correct": true,
+    "failure_type": null,
+    "seconds": 1.639
+  },
+  {
+    "question": "Someone forgot their password and wants it reset immediately.",
+    "expected": "rb-access-v1",
+    "got_sources": [
+      "rb-access-v1"
+    ],
+    "answer_excerpt": "[rb-access-v1] 1. Direct the user to the self-service password reset flow.",
+    "abstained": false,
+    "correct": true,
+    "failure_type": null,
+    "seconds": 0.624
+  },
+  {
+    "question": "The login page keeps rejecting correct credentials.",
+    "expected": "rb-access-v1",
+    "got_sources": [],
+    "answer_excerpt": "ABSTAIN",
+    "abstained": true,
+    "correct": false,
+    "failure_type": "over_abstained",
+    "seconds": 0.001
+  },
+  {
+    "question": "What's the procedure when a user account is suspended?",
+    "expected": "rb-access-v1",
+    "got_sources": [],
+    "answer_excerpt": "ABSTAIN",
+    "abstained": true,
+    "correct": false,
+    "failure_type": "over_abstained",
+    "seconds": 0.228
+  },
+  {
+    "question": "Customer claims they were billed twice this month.",
+    "expected": "rb-billing-v1",
+    "got_sources": [],
+    "answer_excerpt": "ABSTAIN",
+    "abstained": true,
+    "correct": false,
+    "failure_type": "over_abstained",
+    "seconds": 0.001
+  },
+  {
+    "question": "Invoice amount doesn't match what the customer expected to pay.",
+    "expected": "rb-billing-v1",
+    "got_sources": [
+      "rb-billing-v1"
+    ],
+    "answer_excerpt": "[rb-billing-v1]",
+    "abstained": false,
+    "correct": true,
+    "failure_type": null,
+    "seconds": 0.316
+  },
+  {
+    "question": "There's a duplicate charge on the account \u2014 how do we fix it?",
+    "expected": "rb-billing-v1",
+    "got_sources": [
+      "rb-billing-v1"
+    ],
+    "answer_excerpt": "3. Mark the duplicate for reversal through the billing system; do not reverse manually. [rb-billing-v1]",
+    "abstained": false,
+    "correct": true,
+    "failure_type": null,
+    "seconds": 0.694
+  },
+  {
+    "question": "Tax on the invoice looks incorrect for the customer's region.",
+    "expected": "rb-billing-v1",
+    "got_sources": [
+      "rb-billing-v1"
+    ],
+    "answer_excerpt": "[rb-billing-v1]",
+    "abstained": false,
+    "correct": true,
+    "failure_type": null,
+    "seconds": 0.324
+  },
+  {
+    "question": "User says a discount that should have applied wasn't reflected.",
+    "expected": "rb-billing-v1",
+    "got_sources": [
+      "rb-billing-v1"
+    ],
+    "answer_excerpt": "[rb-billing-v1]",
+    "abstained": false,
+    "correct": true,
+    "failure_type": null,
+    "seconds": 0.317
+  },
+  {
+    "question": "How do we verify line items against the original order?",
+    "expected": "rb-billing-v1",
+    "got_sources": [
+      "rb-billing-v1"
+    ],
+    "answer_excerpt": "Excerpt 1 [rb-billing-v1] states: \"Compare the invoice line items to the original order record.\"",
+    "abstained": false,
+    "correct": true,
+    "failure_type": null,
+    "seconds": 1.143
+  },
+  {
+    "question": "API calls from one customer keep timing out.",
+    "expected": "rb-reliability-v1",
+    "got_sources": [
+      "rb-reliability-v1"
+    ],
+    "answer_excerpt": "Excerpt 1 [rb-reliability-v1] step 2: Verify the client's request timeout and retry configuration.",
+    "abstained": false,
+    "correct": true,
+    "failure_type": null,
+    "seconds": 1.287
+  },
+  {
+    "question": "Is there a known outage affecting the EU region?",
+    "expected": "rb-reliability-v1",
+    "got_sources": [
+      "rb-reliability-v1"
+    ],
+    "answer_excerpt": "Excerpt 1 [rb-reliability-v1]",
+    "abstained": false,
+    "correct": true,
+    "failure_type": null,
+    "seconds": 0.442
+  },
+  {
+    "question": "Client's requests are slow \u2014 could this be our service?",
+    "expected": "rb-reliability-v1",
+    "got_sources": [
+      "rb-reliability-v1"
+    ],
+    "answer_excerpt": "Excerpt 1 [rb-reliability-v1] states: \"2. Verify the client's request timeout and retry configuration.\" This excerpt is ",
+    "abstained": false,
+    "correct": true,
+    "failure_type": null,
+    "seconds": 1.494
+  },
+  {
+    "question": "How do we check the service status dashboard?",
+    "expected": "rb-reliability-v1",
+    "got_sources": [
+      "rb-reliability-v1"
+    ],
+    "answer_excerpt": "Excerpt 1 [rb-reliability-v1] states: \"1. Check the service status dashboard for the affected region.\"",
+    "abstained": false,
+    "correct": true,
+    "failure_type": null,
+    "seconds": 1.194
+  },
+  {
+    "question": "Customer wants an ETA for when the API will be back up.",
+    "expected": "rb-reliability-v1",
+    "got_sources": [
+      "rb-reliability-v1"
+    ],
+    "answer_excerpt": "Excerpt 1 [rb-reliability-v1] states: \"4. Do not promise a specific fix time without an incident confirmation.\"",
+    "abstained": false,
+    "correct": true,
+    "failure_type": null,
+    "seconds": 0.824
+  },
+  {
+    "question": "What's our policy for compensating customers during an outage?",
+    "expected": null,
+    "got_sources": [],
+    "answer_excerpt": "ABSTAIN",
+    "abstained": true,
+    "correct": true,
+    "failure_type": null,
+    "seconds": 0.001
+  },
+  {
+    "question": "Can you recommend a good restaurant near the office?",
+    "expected": null,
+    "got_sources": [],
+    "answer_excerpt": "ABSTAIN",
+    "abstained": true,
+    "correct": true,
+    "failure_type": null,
+    "seconds": 0.001
+  },
+  {
+    "question": "How do I change the theme color of the dashboard?",
+    "expected": null,
+    "got_sources": [],
+    "answer_excerpt": "ABSTAIN",
+    "abstained": true,
+    "correct": true,
+    "failure_type": null,
+    "seconds": 0.001
+  }
+]

@@ -1,0 +1,234 @@
+[
+  {
+    "question": "A customer says they can't log in even after resetting their password.",
+    "expected": "rb-access-v1",
+    "got_sources": [
+      "rb-access-v1"
+    ],
+    "answer_excerpt": "Excerpt 1 [rb-access-v1] is relevant. According to the excerpt, if the account is locked, unlock after identity verifica",
+    "abstained": false,
+    "correct": true,
+    "failure_type": null,
+    "seconds": 2.702
+  },
+  {
+    "question": "How should we handle an account that's been locked out?",
+    "expected": "rb-access-v1",
+    "got_sources": [
+      "rb-access-v1"
+    ],
+    "answer_excerpt": "According to Excerpt 1 [rb-access-v1], if an account is locked, the steps to follow are: 1. Ask the user to wait 15 minu",
+    "abstained": false,
+    "correct": true,
+    "failure_type": null,
+    "seconds": 2.178
+  },
+  {
+    "question": "User is stuck at the MFA screen and can't get past it.",
+    "expected": "rb-access-v1",
+    "got_sources": [
+      "rb-access-v1"
+    ],
+    "answer_excerpt": "Excerpt 1 [rb-access-v1] states: \"Verify MFA enrollment status.\" This is relevant to the user's issue.",
+    "abstained": false,
+    "correct": true,
+    "failure_type": null,
+    "seconds": 0.793
+  },
+  {
+    "question": "Someone forgot their password and wants it reset immediately.",
+    "expected": "rb-access-v1",
+    "got_sources": [
+      "rb-access-v1"
+    ],
+    "answer_excerpt": "[rb-access-v1]",
+    "abstained": false,
+    "correct": true,
+    "failure_type": null,
+    "seconds": 0.345
+  },
+  {
+    "question": "The login page keeps rejecting correct credentials.",
+    "expected": "rb-access-v1",
+    "got_sources": [
+      "rb-access-v1"
+    ],
+    "answer_excerpt": "Excerpt 1 [rb-access-v1] is relevant. According to the \"Cannot sign in\" section, the correct steps are: 1. Confirm the u",
+    "abstained": false,
+    "correct": true,
+    "failure_type": null,
+    "seconds": 1.867
+  },
+  {
+    "question": "What's the procedure when a user account is suspended?",
+    "expected": "rb-access-v1",
+    "got_sources": [],
+    "answer_excerpt": "ABSTAIN",
+    "abstained": true,
+    "correct": false,
+    "failure_type": "over_abstained",
+    "seconds": 0.165
+  },
+  {
+    "question": "Customer claims they were billed twice this month.",
+    "expected": "rb-billing-v1",
+    "got_sources": [
+      "rb-billing-v1"
+    ],
+    "answer_excerpt": "Excerpt 1 [rb-billing-v1] # Billing Runbook ## Duplicate charge\n1. Identify both charge IDs and their timestamps.\n2. Con",
+    "abstained": false,
+    "correct": true,
+    "failure_type": null,
+    "seconds": 5.748
+  },
+  {
+    "question": "Invoice amount doesn't match what the customer expected to pay.",
+    "expected": "rb-billing-v1",
+    "got_sources": [
+      "rb-billing-v1"
+    ],
+    "answer_excerpt": "Excerpt 1 [rb-billing-v1] # Billing Runbook ## Invoice total is wrong\n1. Compare the invoice line items to the original ",
+    "abstained": false,
+    "correct": true,
+    "failure_type": null,
+    "seconds": 2.704
+  },
+  {
+    "question": "There's a duplicate charge on the account \u2014 how do we fix it?",
+    "expected": "rb-billing-v1",
+    "got_sources": [],
+    "answer_excerpt": "ABSTAIN",
+    "abstained": true,
+    "correct": false,
+    "failure_type": "over_abstained",
+    "seconds": 1.153
+  },
+  {
+    "question": "Tax on the invoice looks incorrect for the customer's region.",
+    "expected": "rb-billing-v1",
+    "got_sources": [
+      "rb-billing-v1"
+    ],
+    "answer_excerpt": "Excerpt 1 [rb-billing-v1] # Billing Runbook ## Tax or discount mismatch\n1. Verify the customer's billing region and tax ",
+    "abstained": false,
+    "correct": true,
+    "failure_type": null,
+    "seconds": 2.546
+  },
+  {
+    "question": "User says a discount that should have applied wasn't reflected.",
+    "expected": "rb-billing-v1",
+    "got_sources": [
+      "rb-billing-v1"
+    ],
+    "answer_excerpt": "Excerpt 1 [rb-billing-v1] # Billing Runbook ## Tax or discount mismatch\n1. Verify the customer's billing region and tax ",
+    "abstained": false,
+    "correct": true,
+    "failure_type": null,
+    "seconds": 2.284
+  },
+  {
+    "question": "How do we verify line items against the original order?",
+    "expected": "rb-billing-v1",
+    "got_sources": [
+      "rb-billing-v1"
+    ],
+    "answer_excerpt": "Compare the invoice line items to the original order record. [rb-billing-v1]",
+    "abstained": false,
+    "correct": true,
+    "failure_type": null,
+    "seconds": 0.985
+  },
+  {
+    "question": "API calls from one customer keep timing out.",
+    "expected": "rb-reliability-v1",
+    "got_sources": [
+      "rb-reliability-v1"
+    ],
+    "answer_excerpt": "Based on the provided excerpts, the recommended steps for API calls timing out are outlined in Excerpt 1 [rb-reliability",
+    "abstained": false,
+    "correct": true,
+    "failure_type": null,
+    "seconds": 3.663
+  },
+  {
+    "question": "Is there a known outage affecting the EU region?",
+    "expected": "rb-reliability-v1",
+    "got_sources": [
+      "rb-reliability-v1"
+    ],
+    "answer_excerpt": "Excerpt 1 [rb-reliability-v1] states: \"1. Check the service status dashboard for the affected region.\" This is relevant ",
+    "abstained": false,
+    "correct": true,
+    "failure_type": null,
+    "seconds": 0.897
+  },
+  {
+    "question": "Client's requests are slow \u2014 could this be our service?",
+    "expected": "rb-reliability-v1",
+    "got_sources": [
+      "rb-reliability-v1"
+    ],
+    "answer_excerpt": "Excerpt 1 [rb-reliability-v1] states \"Slow requests\" and provides steps to investigate and escalate. According to this e",
+    "abstained": false,
+    "correct": true,
+    "failure_type": null,
+    "seconds": 1.152
+  },
+  {
+    "question": "How do we check the service status dashboard?",
+    "expected": "rb-reliability-v1",
+    "got_sources": [
+      "rb-reliability-v1"
+    ],
+    "answer_excerpt": "According to Excerpt 1 [rb-reliability-v1], the service status dashboard should be checked for the affected region.",
+    "abstained": false,
+    "correct": true,
+    "failure_type": null,
+    "seconds": 1.171
+  },
+  {
+    "question": "Customer wants an ETA for when the API will be back up.",
+    "expected": "rb-reliability-v1",
+    "got_sources": [
+      "rb-reliability-v1"
+    ],
+    "answer_excerpt": "Excerpt 1 [rb-reliability-v1] states: \"If the service is degraded, provide the incident link and estimated resolution wi",
+    "abstained": false,
+    "correct": true,
+    "failure_type": null,
+    "seconds": 1.968
+  },
+  {
+    "question": "What's our policy for compensating customers during an outage?",
+    "expected": null,
+    "got_sources": [
+      "rb-reliability-v1"
+    ],
+    "answer_excerpt": "Excerpt 1 [rb-reliability-v1] states: \"If the service is degraded, provide the incident link and estimated resolution wi",
+    "abstained": false,
+    "correct": false,
+    "failure_type": "should_have_abstained",
+    "seconds": 2.191
+  },
+  {
+    "question": "Can you recommend a good restaurant near the office?",
+    "expected": null,
+    "got_sources": [],
+    "answer_excerpt": "ABSTAIN",
+    "abstained": true,
+    "correct": true,
+    "failure_type": null,
+    "seconds": 0.662
+  },
+  {
+    "question": "How do I change the theme color of the dashboard?",
+    "expected": null,
+    "got_sources": [],
+    "answer_excerpt": "ABSTAIN",
+    "abstained": true,
+    "correct": true,
+    "failure_type": null,
+    "seconds": 0.164
+  }
+]
